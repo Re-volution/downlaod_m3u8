@@ -81,14 +81,15 @@ func getUrlTs() (int, string, []byte) {
 	return i2, addr, iv
 }
 
-var dir = "./"
+var dir = "./sdadwada"
 var wangzhhi = ""
 
 func run() {
 	if len(os.Args) == 1 {
 		fmt.Println("plase input m3u8 addr")
 		fmt.Println("请输入 m3u8的地址作为参数运行")
-		return
+		time.Sleep(10e9)
+		os.Exit(1)
 	}
 	wangzhhi = os.Args[1]
 
